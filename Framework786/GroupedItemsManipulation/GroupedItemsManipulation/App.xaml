@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="GroupedItemsManipulation.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GroupedItemsManipulation"
+    xmlns:localData="using:GroupedItemsManipulation.Data">
+
+    <Application.Resources>
+
+        <!-- Application-specific resources -->
+
+        <x:String x:Key="AppName">GroupedItemsManipulation</x:String>
+
+    </Application.Resources>
+</Application>

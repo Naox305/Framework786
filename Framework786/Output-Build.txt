@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: Framework305, Configuration: Debug Any CPU ------
+1>  Framework305 -> C:\Users\oldboy29\Desktop\Projects\Framework305\Framework305\bin\Debug\Framework305.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
