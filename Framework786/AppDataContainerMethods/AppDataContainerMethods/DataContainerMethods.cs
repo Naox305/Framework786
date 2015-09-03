@@ -80,8 +80,6 @@ namespace AppDataContainerMethods
                         for (int i = 1; i <= TotalNumberOFNotepads; i++)
                         {
                             String uNiqueId = "Group-1-Item-" + i.ToString();
-                            //if (await ContainerTestForUniqueID(uNiqueId) == true)
-                            //    ListOfUsedUniqueIds.Add(uNiqueId);
                         }
                     }
                 }

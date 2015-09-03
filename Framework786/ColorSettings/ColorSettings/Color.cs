@@ -9,20 +9,6 @@ namespace ColorSettings
 {
     public abstract class Color
     {
-        //private String displayColor(String SaveCategory)
-        //{
-        //    try
-        //    {
-        //        int lOcation = Convert.ToInt32(RetrieveSetting("color", SaveCategory));
-
-        //        //int lOcation = 1;
-        //        return createColorList().ElementAtOrDefault(lOcation);
-        //    }
-        //    catch
-        //    {
-        //        return createColorList().ElementAtOrDefault(0);
-        //    }
-        //}
 
         public SolidColorBrush colorOfNotePad(String _UNIQUEID)
         {

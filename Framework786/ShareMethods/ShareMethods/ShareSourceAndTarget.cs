@@ -10,11 +10,8 @@ namespace ShareMethods
 {
     public class Paramaters
     {
-        
-        //public List<String> EmptyList = new List<String> { };
-       // public StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-       // public Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-        public Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation _shareOperation;
+       
+               public Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation _shareOperation;
     }
     public abstract class ShareSourceAndTarget:Paramaters
     {
@@ -44,7 +41,6 @@ namespace ShareMethods
         {
             String thisContent;
             String GroupItemForTitle = "Group-1-Item-" + TotalNumberOFNotepads;
-            //var fileName = "thisFileName.skyDriveFileName(NewText.Text)";
 
             try
             {
@@ -57,8 +53,6 @@ namespace ShareMethods
                 thisContent = "Wrong Format!";
             }
 
-            //await this.shareTO.WriteTo(thisContent, fileName, GroupItemForTitle);
-            //titleChange.Items.Where(v => v.UniqueId == GroupItemForTitle).Single().Title = fileName;
         }
     }
 }

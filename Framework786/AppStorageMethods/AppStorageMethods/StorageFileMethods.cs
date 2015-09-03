@@ -53,11 +53,7 @@ namespace AppStorageMethods
                     await localFolder.CreateFolderAsync(SubFolder305, CreationCollisionOption.ReplaceExisting);
                     StorageFolder SubFolder = await localFolder.GetFolderAsync(SubFolder305);
 
-                    //Problem====================================================================================================================================
-
                     StorageFile sampleFile = await SubFolder.CreateFileAsync(FileName305 + ".rtf", CreationCollisionOption.ReplaceExisting);
-
-                    //Problem====================================================================================================================================
 
                     await FileIO.WriteTextAsync(sampleFile, Contents);
 
@@ -94,27 +90,6 @@ namespace AppStorageMethods
             return DisplayTo;
         }
 
-        //async abstract public Task<String> EraseContainer(String SubFolder305)
-        //{
-        //    try
-        //    {
-
-        //        StorageFile FileToErase = await thisStorageFile(SubFolder305);
-        //        await FileToErase.DeleteAsync(StorageDeleteOption.Default);
-        //        //EraseSettingsContainer(SubFolder305);
-
-        //    }
-        //    catch (ArgumentOutOfRangeException)
-        //    {
-        //    }
-        //    catch (FileNotFoundException)
-        //    {
-        //    }
-
-
-        //    return "Container " + SubFolder305 + " has been erased!";
-        //}
-
         private async Task<StorageFile> thisStorageFile(String SubFolder786)
         {
             StorageFile CurrentFile;
@@ -127,62 +102,5 @@ namespace AppStorageMethods
             return CurrentFile;
         }
 
-        //public abstract async Task<List<String>> ContentsForLIst(String SubFolder305)
-        //{
-        //    Windows.UI.Xaml.Controls.RichEditBox rtfConverterBox = new RichEditBox();
-        //    String rtfFormatedText;
-        //    String ContentsOfCurrentFile;
-        //    List<String> CurrentList = new List<String> { };
-
-        //    try
-        //    {
-
-        //        StorageFile CurrentFile = await thisStorageFile(SubFolder305);
-        //        rtfFormatedText = await FileIO.ReadTextAsync(CurrentFile);
-        //        rtfConverterBox.Document.SetText(Windows.UI.Text.TextSetOptions.FormatRtf, rtfFormatedText);
-        //        rtfConverterBox.Document.GetText(Windows.UI.Text.TextGetOptions.AdjustCrlf, out ContentsOfCurrentFile);
-
-        //    }
-        //    catch (FileNotFoundException)
-        //    {
-        //        CurrentList.Clear();
-        //        return CurrentList;
-        //    }
-        //    catch (ArgumentOutOfRangeException)
-        //    {
-        //        CurrentList.Clear();
-        //        return CurrentList;
-
-        //    }
-
-        //    CurrentList.Clear();
-
-        //    if (ContentsOfCurrentFile.Length > 200)
-        //        CurrentList.Add(ContentsOfCurrentFile.Remove(200) + "...");
-        //    else
-        //        CurrentList.Add(ContentsOfCurrentFile);
-
-        //    return CurrentList;
-        //}
-
-        //public abstract async Task<String> EraseAll(int TotalNumberOFNotepads = 8)
-        //{
-        //    for (int i = 0; i <= TotalNumberOFNotepads; i++)
-        //    {
-        //        String SubFolder305 = "Group-1-Item-" + i.ToString();
-        //        try
-        //        {
-        //            StorageFolder SubFolder = await localFolder.GetFolderAsync(SubFolder305);
-        //            await SubFolder.DeleteAsync(StorageDeleteOption.PermanentDelete);
-        //            await ImageChange(SubFolder305);
-        //            EraseSettingsContainer(SubFolder305);
-        //        }
-        //        catch { }
-        //    }
-        //    EraseSettingsContainer("UsedUniqueIds");
-
-
-        //    return "All subfolders and files have been erased!";
-        //}
     }
 }

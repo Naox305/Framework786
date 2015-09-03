@@ -18,8 +18,6 @@ namespace OneDriveMethods
        public static String GetFilePath; 
        public String FormatName(String rawName)
        {
-           //   \ / ? : * " > < |
-           // _RawName = rawName;
            if (String.IsNullOrWhiteSpace(rawName))
                rawName = "NotePad 305 file";
            else
@@ -100,7 +98,7 @@ namespace OneDriveMethods
                     List<object> data = (List<object>)files.data;
                     foreach (dynamic item in data)
                     {
-                        //LiveOperationResult uploadResult;
+                        
                         if (item.name == thisPath)
                         {
 
@@ -164,7 +162,7 @@ namespace OneDriveMethods
                     List<object> data = (List<object>)files.data;
                     foreach (dynamic item in data)
                     {
-                        //LiveOperationResult uploadResult;
+                     
                         if (item.name == OldName)
                         {
 
@@ -232,36 +230,8 @@ namespace OneDriveMethods
             return Result;
 
             }
-
-            //async public Task<StorageFile> WriteTo(String Contents, String FileType, String FileName305, String SubFolder305="ThisFolder")
-            //{
-
-
-            //    //await EraseContainer(SubFolder305);
-            //    try
-            //    {
-            //        if (String.IsNullOrWhiteSpace(Contents) == false)
-            //        {
-            //            await localFolder.CreateFolderAsync(SubFolder305, CreationCollisionOption.ReplaceExisting);
-            //            StorageFolder SubFolder = await localFolder.GetFolderAsync(SubFolder305);
-
-            //            StorageFile sampleFile = await SubFolder.CreateFileAsync(FileName305 + FileType, CreationCollisionOption.ReplaceExisting);
-
-            //            await FileIO.WriteTextAsync(sampleFile, Contents);
-
-            //            return sampleFile;
-            //        }
-            //        else
-            //            return null;
-            //    }
-            //    catch (FileNotFoundException)
-            //    {
-            //        return null;
-            //    }
-
-
-            //}
-        } /*===========================================================================END Download305=======================================================*/
+                    
+        } 
 
 
     }

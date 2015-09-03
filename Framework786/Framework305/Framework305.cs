@@ -175,26 +175,4 @@ namespace Framework305
         }
     }
 
-    //public sealed class GroupedItems305 : GroupedItemsMethods
-    //{
-    //    private static volatile GroupedItems305 Instance;
-    //    private static object SyncRoot = new Object();
-
-    //    public static GroupedItems305 _Instance
-    //    {
-    //        get
-    //        {
-    //            if (Instance == null)
-    //            {
-    //                lock (SyncRoot)
-    //                {
-    //                    if (Instance == null)
-    //                        Instance = new GroupedItems305();
-    //                }
-    //            }
-
-    //            return Instance;
-    //        }
-    //    }
-    //}
 }
